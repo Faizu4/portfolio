@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Coding Journey</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4a90e2;
+      --secondary: #ffffff;
+      --bg: #f5f7fa;
+      --text: #333333;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: var(--bg); color: var(--text); line-height: 1.6; }
+    header { background: var(--primary); color: var(--secondary); padding: 2rem; text-align: center; }
+    header h1 { font-size: 2.5rem; }
+    section { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+    h2 { margin-bottom: 1rem; font-weight: 600; color: var(--primary); }
+    /* Timeline */
+    .timeline { position: relative; padding: 2rem 0; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%; top: 0;
+      width: 4px; height: 100%; background: var(--primary);
+      transform: translateX(-50%);
+    }
+    .entry { position: relative; width: 50%; padding: 1rem 2rem; }
+    .entry:nth-child(odd) { left: 0; text-align: right; }
+    .entry:nth-child(even) { left: 50%; }
+    .entry::before {
+      content: '';
+      position: absolute; top: 1.5rem;
+      width: 16px; height: 16px;
+      background: var(--secondary);
+      border: 4px solid var(--primary);
+      border-radius: 50%; z-index: 1;
+    }
+    .entry:nth-child(odd)::before { right: -8px; }
+    .entry:nth-child(even)::before { left: -8px; }
+    .entry .date { font-weight: 600; margin-bottom: 0.5rem; }
+    .entry p { background: var(--card-bg); padding: 1rem; border-radius: 0.5rem; box-shadow: 0 2px 4px var(--shadow); display: inline-block; }
+    /* Contact */
+    .contact p { margin: 0.5rem 0; }
+    .contact a.button {
+      display: inline-block; margin-top: 1rem;
+      background: var(--primary); color: var(--secondary);
+      padding: 0.75rem 1.5rem; border-radius: 2rem;
+      text-decoration: none; box-shadow: 0 2px 4px var(--shadow);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FAIZ</h1>
+    <p>Full-Stack Developer & Coding Enthusiast</p>
+  </header>  <section id="about">
+    <h2>About Me</h2>
+    <p>I started my coding journey on <strong>11 February 2025</strong>. Since then, I've explored a variety of technologies: <strong>HTML, CSS, JavaScript, Python, SQLite, API Handling, Pygame, Scikit-Learn, Godot, Unsupervised ML</strong>, and have dabbled in <em>Django, Flask, MySQL, TensorFlow, PySide6</em>.</p>
+  </section>  <section id="journey">
+    <h2>My Journey</h2>
+    <div class="timeline">
+      <div class="entry">
+        <div class="date">11 Feb 2025</div>
+        <p>Asked first question about JavaScript built-in loops.</p>
+      </div>
+      <div class="entry">
+       <!-- <div class="date">12 Feb 2025</div> -->
+        <p>Dove into Python basics and started console projects.</p>
+      </div>
+      <div class="entry">
+        <div class="date">13 Feb 2025</div>
+        <p>Built console-based tools: Calculator & Custom Encryption.</p>
+      </div>
+      <div class="entry">
+        <div class="date">14 Feb 2025</div>
+        <p>Created Hangman, Number Guessing Game, Rock-Paper-Scissors, and Tic-Tac-Toe.</p>
+      </div>
+      <div class="entry">
+        <div class="date">17 Feb 2025</div>
+        <p>Explored PySide6 for GUI applications.</p>
+      </div>
+      <div class="entry">
+        <div class="date">20 Feb 2025</div>
+        <p>Built web apps: Number Guessing Game & started a To-Do app (incomplete on Replit).</p>
+      </div>
+      <div class="entry">
+        <div class="date">22 Feb 2025</div>
+        <p>Learned SQLite basics and API handling skills.</p>
+      </div>
+      <div class="entry">
+        <div class="date">25 Feb 2025</div>
+        <p>Developed Pygame projects: Air Hockey, Snake (with bot), Space Shooter.</p>
+      </div>
+      <div class="entry">
+        <div class="date">01 Mar 2025</div>
+        <p>Started machine learning with Scikit-Learn: regressions & classification (unsupervised learning focus).</p>
+      </div>
+      <div class="entry">
+        <div class="date">05 Mar 2025</div>
+        <p>Experimented with Godot engine for game development.</p>
+      </div>
+      <div class="entry">
+        <div class="date">07 Mar 2025</div>
+        <p>Briefly reviewed Django, Flask, MySQL, TensorFlow fundamentals.</p>
+      </div>
+    </div>
+  </section>  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:faizu42564@gmail.com">faizu42564@gmail.com</a></p>
+    <p>Feel free to reach out if you'd like to collaborate!</p>
+    <a href="mailto:faizu42564@gmail.com" class="button">Contact Me</a>
+  </section>
+</body>
+</html>
+
+
